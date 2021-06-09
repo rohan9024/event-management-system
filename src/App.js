@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
 
+import { Navbar, NavDropdown, Nav, Form, FormControl, Button, Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
+
+import Home from "./Home"
+import BookEvents from "./BookEvents"
+import Feedback from "./Feedback"
+import ViewVenues from "./ViewVenues"
+import Login from "./Login"
+import { useStateValue } from "./StateProvider"
+
+
+
+
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        {!user ? (
+          <Login />
+        ) : (
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/bookevents" component={BookEvents} />
+            <Route path="/viewvenues" component={ViewVenues} />
+            <Route path="/feedback" component={Feedback} />
+            <Route path="/login" component={Login} />
+          </Switch>
+
+        )} 
+      </Router>
+
+
+
     </div>
-  );
+
+
+  )
 }
 
 export default App;

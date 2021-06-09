@@ -1,0 +1,56 @@
+
+.navbar {
+  background-color: #20232a !important;
+}
+
+
+.login__nav {
+  padding-right: 792px;
+}
+
+.nav__username > h3 {
+  font-size: 15px;
+  color: white;
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+.nav__logo {
+  width: 56px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.nav__avatar {
+  display: flex;
+
+  background-color: #20232a !important;
+  align-items: flex-end;
+}
+
+.nav__avatar > h3 {
+  padding-left: 11px;
+  padding-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+.img1 {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.drop__image > img{
+  object-fit: contain;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.dropdown {
+  width: 38%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

@@ -1,0 +1,24 @@
+
+
+.login__container > img {
+    width: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.login__container {
+    padding-right: 100px;
+    background: black;
+    padding: 411px;
+    display: grid;
+    place-items: center;
+    padding-top: 214px;
+    text-align: center;
+    padding-left: 100px;
+    padding-left: 380px;
+}
+.login__container > h3 {
+    color: white;
+    padding-bottom: 10px
+
+}

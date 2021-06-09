@@ -1,0 +1,36 @@
+/* .bookevents {
+    background-color: #20232a !important;
+} */
+
+.jumbotron-fluid {
+  background-color: rgb(22, 18, 18) !important;
+}
+.h1,
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.span__avatar {
+  display: flex;
+  padding-left: 1341px;
+  background-color: rgb(22, 18, 18) !important;
+  
+}
+
+.span__avatar > .span__logo {
+    padding-top: 10px;
+}
+
+.span__avatar > h3 {
+  padding-top: 21px;
+  padding-left: 11px;
+
+  color: white;
+  font-size: 16px;
+}

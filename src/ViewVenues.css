@@ -1,0 +1,28 @@
+.viewvenues__main > h1 {
+    color: #333;
+    text-align: center;
+
+}
+.container {
+    padding-left: 70px;
+    padding-right: 98px;
+    padding-top: 30px;
+}
+
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
