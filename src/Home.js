@@ -8,9 +8,31 @@ import { Avatar } from "@material-ui/core"
 import logo from "./logo.png"
 import "./Home.css"
 import carousal from "./carousal.png"
+import axios from "axios";
+
 
 function Home() {
     const [{ user }] = useStateValue();
+    const handleUser = () => {
+        const username = user?.displayName;
+        const useremail = user?.email;
+
+        let userdetails = {
+            "username": username,
+            "useremail": useremail,
+
+        }
+
+        axios
+            .post("http://localhost:5004/user", userdetails)
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+
+    }
+    handleUser();
+
+
+
 
     return (
         <>

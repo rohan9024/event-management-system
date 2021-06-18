@@ -18,7 +18,6 @@ import { useStateValue } from "./StateProvider"
 
 
 
-
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
@@ -36,7 +35,7 @@ function App() {
             <Route path="/login" component={Login} />
           </Switch>
 
-        )} 
+        )}   
       </Router>
 
 
